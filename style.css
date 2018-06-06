@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    direction: rtl;
+    font-family: 'Arial (Hebrew)', Arial;
+}
+
+.header {
+    height: 101px;
+    background: linear-gradient(rgb(144,144,144) 88%, rgb(177,177,177)); /* Standard syntax (must be last) */
+}
+.container {
+    border: 1px solid rgb(144,144,144);
+}
+
+#page-wrap { width: 100%; margin: 0 auto; }
+/* #page-wrap > table { */
+#page-wrap > div > div {
+    width: 73%; 
+    margin: 0 auto; 
+    border-collapse: collapse;
+}
+
+.englishlink {
+    color: white;
+    text-decoration:none;
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.englishlink:hover {
+    color: rgb(0,92,160);
+    text-decoration: underline;
+}
+
+.searchContainer {
+    padding-top: 10px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.clearFix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+.searchButton {
+    position: relative;
+    top: 0.5em; /*5px;*/
+    left: 0.3em; /*3px;*/
+}
+
+.searchText {
+    border-radius: 0px 8px 0px 0px;
+    height: 20px;
+    width: 135px;
+}
+
+.pazLogo {
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+}
+
+/* .headeLinksLine {
+float: right;
+} */
+.homeLink {
+    display: inline-block;
+    position: relative;
+    bottom: 70px;
+    right: 150px;
+    /* right: 5px; */
+    
+}
+
+#homeImg {
+    width: 17px;
+    height: 17px;
+    background: url("images/menu_home.png") -17px 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+nav > ul > li:not(:last-child)
+{
+    /* padding-right: 15px; */
+    border-left: 2px solid rgb(169,169,169);
+}
+
+nav > ul > li:not(:first-child)
+{
+    padding-right: 15px;
+    font-weight: bolder;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    /* padding: 5px; */
+}
