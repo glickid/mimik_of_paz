@@ -4,11 +4,12 @@
     box-sizing: border-box; 
     direction: rtl;
     font-family: 'Arial (Hebrew)', Arial;
+    font-size: 14px;
 }
 
 .header {
     height: 101px;
-    background: linear-gradient(rgb(144,144,144) 88%, rgb(177,177,177)); /* Standard syntax (must be last) */
+    background: linear-gradient(rgb(144,144,144) 88%, rgb(177,177,177)); /* (must be last) */
 }
 .container {
     border: 1px solid rgb(144,144,144);
@@ -27,10 +28,10 @@
     text-decoration:none;
     padding-left: 15px;
     font-size: 12px;
-    font-weight: bolder;
+    font-weight: 520;
 }
 
-.englishlink:hover {
+a:hover {
     color: rgb(0,92,160);
     text-decoration: underline;
 }
@@ -39,9 +40,15 @@
     padding-top: 10px;
 }
 
+
 .floatLeft {
     float: left;
 }
+
+.floatRight {
+    float: Right;
+}
+
 
 .clearFix:after {
     content: "";
@@ -51,8 +58,8 @@
 
 .searchButton {
     position: relative;
-    top: 0.5em; /*5px;*/
-    left: 0.3em; /*3px;*/
+    top: 0.5em; 
+    left: 0.3em;
 }
 
 .searchText {
@@ -76,7 +83,6 @@ float: right;
     bottom: 70px;
     right: 150px;
     /* right: 5px; */
-    
 }
 
 #homeImg {
@@ -85,26 +91,117 @@ float: right;
     background: url("images/menu_home.png") -17px 0;
 }
 
-nav > ul > li {
+.headerLinks > ul > li {
     display: inline-block;
     padding-left: 15px;
 }
 
-nav > ul > li:not(:last-child)
+.headerLinks > ul > li:not(:last-child)
 {
     /* padding-right: 15px; */
     border-left: 2px solid rgb(169,169,169);
 }
 
-nav > ul > li:not(:first-child)
+.headerLinks > ul > li:not(:first-child)
 {
     padding-right: 15px;
-    font-weight: bolder;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-nav > ul > li > a {
-    display: inline-block;
+.headerLinks > ul > li > a {
+    display: block;
     color: white;
     text-decoration: none;
-    /* padding: 5px; */
+}
+
+.headerLinks > ul > li > a:first-child {
+    padding-bottom: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    /* background-color: grey; */
+    right: 13%;
+    top: 160%;
+    min-width: 120px;
+    display: none;
+    background: linear-gradient( rgb(177,177,177), rgb(144,144,144) 12%); /* (must be last) */
+}
+
+.dropdown-content > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px 5px 8px;
+    font-weight: 520;
+    font-family: arial;
+    border-top: 0.01em solid lightgrey;
+    border-bottom: 0.01em solid lightgrey;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > a:hover {
+    color: rgb(0,92,160);
+    text-decoration: underline;
+}
+
+.theFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    /* height: 60px; */
+    background: linear-gradient( rgb(177,177,177), rgb(144,144,144) 30%); /* (must be last) */
+}
+
+.footLinkLine > ul > .footLinks {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 7px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.footLinkLine > ul > li:not(:first-child) {
+    border-right: 1px solid white;
+}
+
+.footLinks > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 520; 
+}
+
+.footLinks > a:hover, .hesder:hover{
+    color: rgb(0,92,160);
+    text-decoration: underline;
+}
+
+.hesder {
+    display: block;
+    color: red;
+    text-decoration: none;
+}
+
+.footLinkLine {
+    position: relative;
+    bottom: 0.1em;
+    left: 1em;
+}
+
+.fbIcon {
+    position: relative;
+    top: 0.2em;
+    right: 0.3em;
 }
