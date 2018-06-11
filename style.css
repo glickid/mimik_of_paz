@@ -11,12 +11,12 @@
     height: 101px;
     background: linear-gradient(rgb(144,144,144) 88%, rgb(177,177,177)); /* (must be last) */
 }
+
 .container {
     border: 1px solid rgb(144,144,144);
 }
 
 #page-wrap { width: 100%; margin: 0 auto; }
-/* #page-wrap > table { */
 #page-wrap > div > div {
     width: 73%; 
     margin: 0 auto; 
@@ -94,7 +94,6 @@ a:hover {
 
 .headerLinks > ul > li:not(:last-child)
 {
-    /* padding-right: 15px; */
     border-left: 2px solid rgb(169,169,169);
 }
 
@@ -117,12 +116,14 @@ a:hover {
 
 .dropdown {
     position: relative;
+    padding-bottom: 15px;
 }
 
 .dropdown-content {
     position: absolute;
     right: 13%;
-    top: 160%;
+    top: 95%;
+    z-index: 100;
     min-width: 120px;
     display: none;
     background: linear-gradient( rgb(177,177,177), rgb(144,144,144) 12%); /* (must be last) */
@@ -133,7 +134,7 @@ a:hover {
     color: white;
     text-decoration: none;
     padding: 5px 8px 5px 8px;
-    font-weight: 520;
+    font-weight: bold;
     font-family: arial;
     border-top: 0.01em solid lightgrey;
     border-bottom: 0.01em solid lightgrey;
@@ -192,7 +193,7 @@ a:hover {
 .footLinkLine {
     position: relative;
     bottom: 0.1em;
-    left: 1em;
+    left: 2.5em;
 }
 
 .fbIcon {
@@ -231,7 +232,7 @@ a:hover {
 }
 
 .mainTable {
-    margin-top: 30px;
+    margin-top: 17px;
     margin-bottom: 60px;
     border-spacing: 0.8em 1em;
 }
@@ -242,6 +243,14 @@ a:hover {
     color: gray;
 }
 
+.textLeft > a {
+    color: gray;
+}
+
+.textLeft > a:hover {
+    color: rgb(0,92,160);
+    text-decoration: underline;
+}
 #moreDetailsImg {
     position: relative;
     left: 18px;
@@ -250,7 +259,7 @@ a:hover {
 .lowTableLine {
     height: 216px;
     width: 276px;
-    border: 1px solid gray;
+    border: 1px solid rgb(215,215,215);
     border-radius: 0px 20px 0px 0px;
     background: linear-gradient( rgb(255,255,255) 80%, rgb(215,215,215) ); /* (must be last) */
 }
@@ -265,7 +274,7 @@ a:hover {
 
 .greyBorder {
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(215,215,215);
+    border-bottom: 1px solid rgb(230,230,230);
 }
 
 .lowTableHeader {
@@ -285,6 +294,11 @@ a:hover {
 .mapImg {
     position: relative;
     left: 10px;
+}
+
+.mapList > li:first-child > img {
+    position: relative;
+    right: 6px;
 }
 
 .mapLink {
