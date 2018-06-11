@@ -23,7 +23,7 @@
     border-collapse: collapse;
 }
 
-.englishlink {
+.english_link {
     color: white;
     text-decoration:none;
     padding-left: 15px;
@@ -36,87 +36,103 @@ a:hover {
     text-decoration: underline;
 }
 
-.searchContainer {
+.search_container {
+    position: relative;
+    left: 10px;
     padding-top: 10px;
 }
 
 
-.floatLeft {
+.float-left {
     float: left;
 }
 
-.floatRight {
+.float-right {
     float: Right;
 }
 
 
-.clearFix:after {
+.clear-fix:after {
     content: "";
     display: table;
     clear: both;
 } 
 
-.searchButton {
+.search_button {
     position: relative;
     top: 0.5em; 
     left: 0.3em;
 }
 
-.searchText {
+.search_text {
     border-radius: 0px 8px 0px 0px;
     height: 20px;
     width: 135px;
 }
 
-.pazLogo {
+.list_n_logo {
+    position: relative;
+    right : 25px;
+}
+.paz_logo {
     display: inline-block;
     position: relative;
     bottom: 4px;
 }
 
-.homeLink {
+.home_link {
     display: inline-block;
     position: relative;
     bottom: 70px;
-    right: 150px;
+    right: 164px;
 }
 
-#homeImg {
+.home_img {
+    position : relative;
+    top: 7px;
     width: 17px;
     height: 17px;
+}
+
+.home_img_src {
     background: url("images/menu_home.png") -17px 0;
 }
 
-.headerLinks > ul > li {
+.header_links > ul > li {
     display: inline-block;
     padding-left: 15px;
 }
 
-.headerLinks > ul > li:not(:last-child)
+.header_links > ul > li:not(:last-child):not(:first-child) 
 {
     border-left: 2px solid rgb(169,169,169);
 }
 
-.headerLinks > ul > li:not(:first-child)
+.header_links > ul > li:nth-child(2) {
+    border-right: 2px solid rgb(169,169,169);
+}
+
+.header_links > ul > li:not(:first-child)
 {
     padding-right: 15px;
     font-size: 15px;
     font-weight: bold;
 }
 
-.headerLinks > ul > li > a {
+.header_links > ul > li > a {
     display: block;
     color: white;
     text-decoration: none;
 }
 
-.headerLinks > ul > li > a:first-child {
+.header_links > ul > li > a:first-child {
     padding-bottom: 5px;
 }
 
 .dropdown {
     position: relative;
-    padding-bottom: 15px;
+    top : 4px;
+    padding-bottom: 12px;
 }
 
 .dropdown-content {
@@ -149,7 +165,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.theFooter {
+.the-footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -160,7 +176,7 @@ a:hover {
     background: linear-gradient( rgb(177,177,177), rgb(144,144,144) 30%); /* (must be last) */
 }
 
-.footLinkLine > ul > .footLinks {
+.foot-link-line > ul > .foot-links {
     display: inline-block;
     padding-left: 4px;
     padding-right: 7px;
@@ -168,18 +184,18 @@ a:hover {
     margin-bottom: 5px;
 }
 
-.footLinkLine > ul > li:not(:first-child) {
+.foot-link-line > ul > li:not(:first-child) {
     border-right: 1px solid white;
 }
 
-.footLinks > a {
+.foot-links > a {
     display: block;
     color: white;
     text-decoration: none;
     font-weight: 520; 
 }
 
-.footLinks > a:hover, .hesder:hover{
+.foot-links > a:hover, .hesder:hover{
     color: rgb(0,92,160);
     text-decoration: underline;
 }
@@ -190,29 +206,29 @@ a:hover {
     text-decoration: none;
 }
 
-.footLinkLine {
+.foot-link-line {
     position: relative;
     bottom: 0.1em;
     left: 2.5em;
 }
 
-.fbIcon {
+.fb-icon {
     position: relative;
     top: 0.2em;
     right: 0.3em;
 }
 
-.topImgContainer {
+.top-img-container {
     position: relative;
     text-align: right;
     color: white;
 }
 
-.topImgsCurve {
+.top-imgs-curve {
     border-radius: 0px 0px 20px 0px;
 }
 
-.overText {
+.over-text {
     position: absolute;
     max-width: 240px;
     padding-right: 15px;
@@ -222,41 +238,42 @@ a:hover {
     border-radius: 0px 0px 20px 0px;
 }
 
-.overText > div > nav > a {
+.over-text > div > nav > a {
     color: white;
 }
 
-.overText > div > nav > a:hover {
+.over-text > div > nav > a:hover {
     color: rgb(0,92,160);
     text-decoration: underline;
 }
 
-.mainTable {
+.main-table {
     margin-top: 17px;
     margin-bottom: 60px;
     border-spacing: 0.8em 1em;
 }
 
-.textLeft {
+.text-left {
     position: relative;
     right: 155px;
     color: gray;
 }
 
-.textLeft > a {
+.text-left > a {
     color: gray;
 }
 
-.textLeft > a:hover {
+.text-left > a:hover {
     color: rgb(0,92,160);
     text-decoration: underline;
 }
-#moreDetailsImg {
+
+#more-details-img {
     position: relative;
     left: 18px;
 }
 
-.lowTableLine {
+.low-table-line {
     height: 216px;
     width: 276px;
     border: 1px solid rgb(215,215,215);
@@ -264,7 +281,7 @@ a:hover {
     background: linear-gradient( rgb(255,255,255) 80%, rgb(215,215,215) ); /* (must be last) */
 }
 
-.bannerTable {
+.banner-table {
     position: relative;
     bottom: 10px;
     right: 15px;
@@ -272,16 +289,16 @@ a:hover {
     margin: 0 auto;
 }
 
-.greyBorder {
+.grey-border {
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(230,230,230);
 }
 
-.lowTableHeader {
+.low-table-header {
     color: rgb(90,90,90);
 }
 
-.mapList {
+.map-list {
     position: relative;
     bottom: 30px;
     left: 20px;
@@ -291,17 +308,17 @@ a:hover {
     line-height: 1.5;
 }
 
-.mapImg {
+.map-img {
     position: relative;
     left: 10px;
 }
 
-.mapList > li:first-child > img {
+.map-list > li:first-child > img {
     position: relative;
     right: 6px;
 }
 
-.mapLink {
+.map-link {
     position: relative;
     bottom: 5px;
     padding-left:10px;
