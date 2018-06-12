@@ -280,6 +280,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.read-more-link {
+    color : white;
+}
+
 .top-img-container > div:not(:first-child)
 {
     margin-right: 15px;
@@ -340,18 +344,16 @@ a:hover {
 }
 
 .map-list {
-    position: relative;
-    bottom: 30px;
-    left: 20px;
     list-style: none;
     color: grey;
-    margin-bottom: 10px;
+    margin-right: 21px;
     line-height: 1.5;
 }
 
 .map-img {
     position: relative;
-    left: 10px;
+    left: 19px;
+    bottom: 19px;
 }
 
 .map-list > li:first-child > img {
