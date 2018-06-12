@@ -17,9 +17,23 @@
 }
 
 #page-wrap { width: 100%; margin: 0 auto; }
-#page-wrap > div > div {
+
+#page-wrap > div > .search_container {
     width: 73%; 
     margin: 0 auto; 
+    border-collapse: collapse;
+}
+
+#page-wrap > div > .list_n_logo {
+    width: 70%; 
+    margin: 0 auto; 
+    border-collapse: collapse;
+}
+
+#page-wrap > div > .Main {
+    width: 60%;
+    height : 800px;
+    margin: 35px auto; 
     border-collapse: collapse;
 }
 
@@ -38,8 +52,8 @@ a:hover {
 
 .search_container {
     position: relative;
-    left: 10px;
-    padding-top: 10px;
+    left: 174px;
+    padding-top: 12px;
 }
 
 
@@ -72,7 +86,7 @@ a:hover {
 
 .list_n_logo {
     position: relative;
-    right : 25px;
+    right : 102px;
 }
 .paz_logo {
     display: inline-block;
@@ -172,7 +186,6 @@ a:hover {
     width: 100%;
     color: white;
     text-align: center;
-    /* height: 60px; */
     background: linear-gradient( rgb(177,177,177), rgb(144,144,144) 30%); /* (must be last) */
 }
 
@@ -219,7 +232,7 @@ a:hover {
 }
 
 .top-img-container {
-    position: relative;
+    position: relative; /* need for the absolute positioning of the over-text */
     text-align: right;
     color: white;
 }
@@ -228,7 +241,7 @@ a:hover {
     border-radius: 0px 0px 20px 0px;
 }
 
-.over-text {
+.over-text1 {
     position: absolute;
     max-width: 240px;
     padding-right: 15px;
@@ -238,19 +251,38 @@ a:hover {
     border-radius: 0px 0px 20px 0px;
 }
 
-.over-text > div > nav > a {
+.over-text2 {
+    position: absolute;
+    max-width: 240px;
+    padding-right: 15px;
+    bottom: 8px;
+    right: 314px;
+    background-color: rgba(120,120,120, 0.9);
+    border-radius: 0px 0px 20px 0px;
+}
+
+.over-text3 {
+    position: absolute;
+    max-width: 240px;
+    padding-right: 15px;
+    bottom: 8px;
+    right: 625px;
+    background-color: rgba(120,120,120, 0.9);
+    border-radius: 0px 0px 20px 0px;
+}
+
+.over-text > nav > a {
     color: white;
 }
 
-.over-text > div > nav > a:hover {
+.over-text > nav > a:hover {
     color: rgb(0,92,160);
     text-decoration: underline;
 }
 
-.main-table {
-    margin-top: 17px;
-    margin-bottom: 60px;
-    border-spacing: 0.8em 1em;
+.top-img-container > div:not(:first-child)
+{
+    margin-right: 15px;
 }
 
 .text-left {
@@ -273,23 +305,25 @@ a:hover {
     left: 18px;
 }
 
+.bottom-img-container > .low-table-line:not(:first-child) {
+    margin-right: 15px;
+}
+
 .low-table-line {
+    margin-top: 16px;
     height: 216px;
-    width: 276px;
+    width: 291px;
     border: 1px solid rgb(215,215,215);
     border-radius: 0px 20px 0px 0px;
     background: linear-gradient( rgb(255,255,255) 80%, rgb(215,215,215) ); /* (must be last) */
 }
 
 .banner-table {
-    position: relative;
-    bottom: 10px;
-    right: 15px;
     border-spacing: 0.8em 1.2em;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
-.grey-border {
+.grey-underline {
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(230,230,230);
 }
