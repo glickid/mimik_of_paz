@@ -287,7 +287,8 @@ a:hover {
 
 .text-left {
     position: relative;
-    right: 155px;
+    left: 30px;
+    margin-top: 20px;
     color: gray;
 }
 
@@ -302,7 +303,8 @@ a:hover {
 
 #more-details-img {
     position: relative;
-    left: 18px;
+    right: 62px;
+    margin-top: 20px;
 }
 
 .bottom-img-container > .low-table-line:not(:first-child) {
@@ -323,13 +325,18 @@ a:hover {
     margin: 0px auto;
 }
 
-.grey-underline {
-    padding-bottom: 10px;
+.grey-underline-header {
+    padding-bottom: 8px;
+    margin: 10px 20px 20px 0px;
     border-bottom: 1px solid rgb(230,230,230);
 }
 
 .low-table-header {
     color: rgb(90,90,90);
+}
+
+.bottom-img {
+    margin-right: 20px;
 }
 
 .map-list {
