@@ -19,19 +19,19 @@
 #page-wrap { width: 100%; margin: 0 auto; }
 
 #page-wrap > div > .search_container {
-    width: 73%; 
+    width: 97%; 
     margin: 0 auto; 
     border-collapse: collapse;
 }
 
 #page-wrap > div > .list_n_logo {
-    width: 70%; 
+    width: 86%; 
     margin: 0 auto; 
     border-collapse: collapse;
 }
 
 #page-wrap > div > .Main {
-    width: 60%;
+    width: 74%;
     height : 800px;
     margin: 35px auto; 
     border-collapse: collapse;
